@@ -1,0 +1,4 @@
+numpy
+scipy
+tflite-runtime
+scikit-image
