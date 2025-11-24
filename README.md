@@ -104,20 +104,6 @@ Open `Tiny_ML_Train.ipynb` to see the training pipeline used to produce the mode
 
 ---
 
-## Tips for improving or extending this repo
-
-* **Document `new_file.py`**: Add a `--help` or top-of-file docstring that describes CLI arguments and expected input shapes. Example: `--input`, `--model`, `--sample-rate`, `--frame-length`.
-* **Add unit tests**: small tests to check model loading and that the expected input shape matches the preprocessing pipeline.
-* **Make an inference wrapper**: create a `run_inference.py` that:
-
-  * loads the TFLite model,
-  * performs audio preprocessing (resample, normalize, convert to spectrogram/MFCC),
-  * runs inference and returns class probabilities and timestamps (if needed).
-* **Benchmarking script**: measure latency and RAM usage on a Raspberry Pi (use `time` or `perf` and `psutil`).
-* **Add a sample `systemd` service or simple daemon** to run real-time audio capture (e.g., via `arecord`/`sounddevice`) and call the inference wrapper.
-
----
-
 ## Dependencies
 
 See `requirements.txt` for the exact packages used. Typical packages for this workflow include:
