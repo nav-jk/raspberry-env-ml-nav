@@ -136,16 +136,3 @@ If `requirements.txt` uses `tensorflow` and you only need inference on the Pi, p
 This project is distributed under the **MIT License**. See the `LICENSE` file for details.
 
 ---
-
-## Contact / Authors
-
-Repository owner: `nav-jk` (Navaneet)
-
-If you want, I can:
-
-* Convert this README into a nicely-formatted `README.md` and open a PR with the file.
-* Add an extended `run_inference.py` using the exact preprocessing found in `Tiny_ML_Train.ipynb`.
-
----
-
-*Generated after inspecting repository file list and core files.*
